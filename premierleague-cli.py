@@ -3,6 +3,7 @@ from prettytable import PrettyTable
 import click
 
 table = PrettyTable(["Position","Team", "Played Games", "Wins", "Draws", "Losses","Goals For", "Goals Against", "Points"])
+#Does GET Request to API
 premier_league_table = requests.get("https://heisenbug-premier-league-live-scores-v1.p.mashape.com/api/premierleague/table",
   headers={
     "X-Mashape-Key": "hScR2YKaw6mshHF7Swl6Q69gfsGlp1PIyzDjsn7jstFD5qhP91",
